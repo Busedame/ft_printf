@@ -6,7 +6,7 @@
 /*   By: nholbroo <nholbroo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 16:53:00 by nholbroo          #+#    #+#             */
-/*   Updated: 2023/12/06 21:21:51 by nholbroo         ###   ########.fr       */
+/*   Updated: 2023/12/07 16:34:53 by nholbroo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ int	ft_printf(const char *txt, ...)
 	// printf("TEST: Hello there\n");
 	// printf("\n\n\nHello %s %d\n");
 	// ft_printf("\n\n\nHello %s %d\n");
-}
+//}
 
 
 // Unsigned int max value: 4294967295
