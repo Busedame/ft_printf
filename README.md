@@ -26,20 +26,20 @@ int ft_printf(const char *, ...);
 - `%X` Prints a number in hexadecimal (base 16) uppercase format.
 - `%%` Prints a percent sign.
 
-The `const char *` is a string that can contain both text and type identifiers, like "%s", "%p", etc.
-By using the function `va_start()`, the **type identifiers** in `const char *` gets connected to the data `...`.
-For example: `ft_printf("%i", 42);`
-In this example, `const char *` is `%i` and `...` is `42`.
+The `const char *` is a string that can contain both text and type identifiers, like "%s", "%p", etc.  
+By using the function `va_start()`, the **type identifiers** in `const char *` gets connected to the data `...`.  
+For example: `ft_printf("%i", 42);`  
+In this example, `const char *` is `%i` and `...` is `42`.  
 
-The function `va_arg()` is used to iterate through the type identifiers and their respective data.
-In `ft_printf()` -> whenever a type identifier is found in `const char *`, it gets connected to the next argument in `...`.
-For example: `ft_printf("Hello, world! My name is %s\n", "Bob");`
-In this example, `const char *` is `"Hello, world! My name is %s\n"`, and `...` is `"Bob"`.
-What will be printed on the standard output: `"Hello, world! My name is Bob"`.
+The function `va_arg()` is used to iterate through the type identifiers and their respective data.  
+In `ft_printf()` -> whenever a type identifier is found in `const char *`, it gets connected to the next argument in `...`.  
+For example: `ft_printf("Hello, world! My name is %s\n", "Bob");`  
+In this example, `const char *` is `"Hello, world! My name is %s\n"`, and `...` is `"Bob"`.  
+What will be printed on the standard output: `"Hello, world! My name is Bob"`.  
 
-When `const char *` has reached the `'\0'`, meaning it has reached its end, `va_end()` is called to clean up the `va_list`.
+When `const char *` has reached the `'\0'`, meaning it has reached its end, `va_end()` is called to clean up the `va_list`.  
 
-The return value for `ft_printf()` is an `int`, indicating **how many characters were printed**.
+The return value for `ft_printf()` is an `int`, indicating **how many characters were printed**.  
 It returns `-1` upon error.
 
 ---
