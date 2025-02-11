@@ -6,7 +6,7 @@
 /*   By: nholbroo <nholbroo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 16:53:00 by nholbroo          #+#    #+#             */
-/*   Updated: 2023/12/07 16:34:53 by nholbroo         ###   ########.fr       */
+/*   Updated: 2025/02/11 13:33:28 by nholbroo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,26 +59,17 @@ int	ft_printf(const char *txt, ...)
 	return (count);
 }
 
-// #include <stdio.h>
-// #include <limits.h>
+/*
+int	main()
+{
+	int	len;
+	int	testlen;
 
-// int	main()
-// {
-// 	int	len;
-// 	int	testlen;
-
-// 	len = ft_printf("MINE: Hello %s, how are %c? %i %% out of %u? Upper-hexa: %X Lower-Hexa: %x\n %p\n", "Natalie", 'u', 100, 4294967295U, 4294967295U, 4294967295U, "Hey");
-// 	testlen = printf("TEST: Hello %s, how are %c? %i %% out of %u? Upper-hexa: %X Lower-Hexa: %x\n %p\n", "Natalie", 'u', 100, 4294967295U, 4294967295U, 4294967295U, "Hey");
-// 	ft_printf("Length: %d\n", len);
-// 	printf("Length: %d\n", testlen);
-	// ft_printf("%p %p %p\n", 0, LONG_MAX, -1);
-	// printf("%p %p %p\n", 0, LONG_MAX, -1);
-	// ft_printf("MINE: Hello there\n");
-	// printf("TEST: Hello there\n");
-	// printf("\n\n\nHello %s %d\n");
-	// ft_printf("\n\n\nHello %s %d\n");
-//}
-
-
-// Unsigned int max value: 4294967295
-// cc ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_strlen.c ft_putuint.c ft_putpercent.c ft_puthexa_upper.c ft_puthexa_lower.c ft_putptr.c && ./a.out
+	len = ft_printf("MY FUNCTION: Hello %s, how are %c? %i %% out of %u? Upper-hexa: %X Lower-Hexa: %x\n %p\n", "Natalie", 'u', 100, 4294967295U, 4294967295U, 4294967295U, "Hey");
+	testlen = printf("OR FUNCTION: Hello %s, how are %c? %i %% out of %u? Upper-hexa: %X Lower-Hexa: %x\n %p\n", "Natalie", 'u', 100, 4294967295U, 4294967295U, 4294967295U, "Hey");
+	ft_printf("MY FUNCTION, length: %d\n", len);
+	printf("OR FUNCTION, length: %d\n", testlen);
+	ft_printf("MY FUNCTION: %p %p %p\n", 0, LONG_MAX, -1);
+	printf("OR FUNCTION: %p %p %p\n", 0, LONG_MAX, -1);
+}
+*/

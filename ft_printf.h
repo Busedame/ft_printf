@@ -6,7 +6,7 @@
 /*   By: nholbroo <nholbroo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 16:53:26 by nholbroo          #+#    #+#             */
-/*   Updated: 2023/12/06 20:09:47 by nholbroo         ###   ########.fr       */
+/*   Updated: 2025/02/11 13:28:23 by nholbroo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 # include <stdarg.h>
 # include <unistd.h>
 # include <stddef.h>
+# include <stdio.h>
+# include <limits.h>
 
 int		ft_printf(const char *txt, ...);
 
