@@ -49,7 +49,7 @@ It returns `-1` upon error.
 ---
 
 ## 🧰 **Included Files**  
-- The `ft_printf.c` containing the main `ft_printf()` function, and all the printing functions for the different types.
+- The `ft_printf.c` file containing the `ft_printf()` function, and the remaining `*.c` files containing all the printing functions for the different types.
 - A `Makefile`.
 - A header file.
 
