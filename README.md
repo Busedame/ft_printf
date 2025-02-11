@@ -30,7 +30,8 @@ int ft_printf(const char *, ...);
 The `const char *` is a string that can contain both text and type identifiers, like "%s", "%p", etc.  
 By using the function `va_start()`, the **type identifiers** in `const char *` gets connected to the **data** `...`.  
 - For example: `ft_printf("%i", 42);`  
-- In this example, `const char *` is `%i` and `...` is `42`.  
+- In this example, `const char *` is `%i` and `...` is `42`.
+- What will be printed on the standard output: `42`.  
 
 #### Understanding `va_arg()` in `ft_printf()`
 The function `va_arg()` is used to iterate through the type identifiers and their respective data.  
