@@ -146,7 +146,7 @@ OPTIONS = -c
 FT_PRINTF_PATH = ./ft_printf
 
 # Source files for your project
-SRC = src/main.c
+SRC = main.c
 
 # Object files for your project
 OBJ = $(SRC:.c=.o)
