@@ -6,7 +6,7 @@
 /*   By: nholbroo <nholbroo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 16:53:00 by nholbroo          #+#    #+#             */
-/*   Updated: 2025/02/11 13:33:28 by nholbroo         ###   ########.fr       */
+/*   Updated: 2025/02/11 14:13:06 by nholbroo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,21 @@ static int	ft_putargv(char frmt_tp, va_list argv)
 	return (0);
 }
 
+/*
+Prints to the standard output.
+
+@param txt The text to be printed (including type identifiers, like '%s', '%d', 
+etc).
+@param ... The value of the type identifiers (if any). E.g. if a '%s' is defined
+in the 'txt' string, a corresponding string is expected as a value in '...'. The
+'...' format makes it possible to receive an undefined amount of arguments.
+
+Example usage: ft_printf("%s\n", "Hello, world!");
+
+Return value: 
+Upon success, returns amount of characters printed.
+Upon error, returns -1.
+*/
 int	ft_printf(const char *txt, ...)
 {
 	va_list	argv;
