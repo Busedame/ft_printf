@@ -15,6 +15,14 @@ The `ft_printf()` function is declared like this:
 int ft_printf(const char *, ...);
 ```
 
+#### Arguments of `ft_printf()`  
+- `const char *` -- A string containing characters and/or type identifiers.  
+- `...` -- An undefined amount of arguments, with undefined types.  
+
+#### Return value of `ft_printf()`  
+The return value for `ft_printf()` is an `int`, indicating **how many characters were printed**.  
+It returns `-1` upon error.  
+
 `ft_printf()` writes to the standard output, and is limited to handling the following conversions:
 - `%c` Prints a single character.
 - `%s` Prints a string (as defined by the common C convention).
@@ -43,10 +51,6 @@ In `ft_printf()` -> whenever a type identifier is found in `const char *`, it ge
 
 #### Understanding `va_end()` in `ft_printf()`
 When `const char *` has reached the `'\0'`, meaning it has reached its end, `va_end()` is called to clean up the `va_list`.  
-
-#### Return value of `ft_printf()`
-The return value for `ft_printf()` is an `int`, indicating **how many characters were printed**.  
-It returns `-1` upon error.
 
 ---
 
