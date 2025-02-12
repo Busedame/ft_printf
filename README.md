@@ -82,9 +82,9 @@ git clone https://github.com/busedame/ft_printf/ ft_printf && cd ft_printf
 	- Either use the existing main function in `ft_printf.c` (needs to be commented out), or add a `main.c` file with a new main function.
 	- Compile using this command:
 	```bash
-	cc *.c -o ft_printf`
+	cc *.c -o ft_printf
 	```
  	- Run using this command:
 	```bash
-	./ft_printf`
+	./ft_printf
  	```
