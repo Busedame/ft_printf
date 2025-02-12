@@ -6,12 +6,19 @@
 /*   By: nholbroo <nholbroo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 14:34:52 by nholbroo          #+#    #+#             */
-/*   Updated: 2023/12/05 16:47:58 by nholbroo         ###   ########.fr       */
+/*   Updated: 2025/02/12 13:03:41 by nholbroo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+/*
+	Converts and prints a number in uppercase hexadecimal format to 
+	the standard output.
+	Does not take integer overflow/underflow into consideration, so the number
+	should always be within unsigned int range.
+	Returns the amount of digits printed.
+*/
 int	ft_puthexa_upper(unsigned int n)
 {
 	char	str[9];

@@ -6,12 +6,19 @@
 /*   By: nholbroo <nholbroo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 16:57:33 by nholbroo          #+#    #+#             */
-/*   Updated: 2023/12/06 20:35:41 by nholbroo         ###   ########.fr       */
+/*   Updated: 2025/02/12 12:59:37 by nholbroo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+/*
+	Converts and prints a pointer address to the standard output.
+	The format of a pointer address will always start with "0x" followed by
+	the pointer address in hexadecimal format. Like this: "0x40210a".
+	If the pointer is invalid (null), it prints "(nil)" to the standard output.
+	Returns the amount of digits printed.
+*/
 int	ft_putptr(unsigned long int n)
 {
 	char			str[16];

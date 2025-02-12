@@ -6,12 +6,19 @@
 /*   By: nholbroo <nholbroo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 17:25:21 by nholbroo          #+#    #+#             */
-/*   Updated: 2023/12/05 14:29:42 by nholbroo         ###   ########.fr       */
+/*   Updated: 2025/02/12 13:02:48 by nholbroo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+/*
+	Helper function for ft_putuint().
+	Converts and prints an unsigned integer to the standard output.
+	Does not take integer overflow/underflow into consideration, so the number
+	should always be within unsigned int range.
+	Returns the amount of digits printed.
+*/
 static int	ft_nbwrite(char *str, unsigned int n)
 {
 	int	i;
@@ -34,6 +41,12 @@ static int	ft_nbwrite(char *str, unsigned int n)
 	return (count);
 }
 
+/*
+	Converts and prints an unsigned integer to the standard output.
+	Does not take integer overflow/underflow into consideration, so the number
+	should always be within unsigned int range.
+	Returns the amount of digits printed.
+*/
 int	ft_putuint(unsigned int n)
 {
 	char	str[11];

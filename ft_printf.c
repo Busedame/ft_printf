@@ -6,12 +6,21 @@
 /*   By: nholbroo <nholbroo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 16:53:00 by nholbroo          #+#    #+#             */
-/*   Updated: 2025/02/11 14:13:06 by nholbroo         ###   ########.fr       */
+/*   Updated: 2025/02/12 13:08:50 by nholbroo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+/*
+	Takes a format type (s for string, c for char, etc.), and calls a function 
+	to write the value to the standard output, depending on the type.
+	Returns the amount of characters written.
+	@param frmt_tp Format type (type identifier). For more info about the
+	different types, check this repo's README.
+	@param argv The current argument of the list ("..." from ft_printf() 
+	function).
+*/
 static int	ft_putargv(char frmt_tp, va_list argv)
 {
 	if (frmt_tp == 'c')
@@ -84,7 +93,7 @@ int	main()
 	testlen = printf("OR FUNCTION: Hello %s, how are %c? %i %% out of %u? Upper-hexa: %X Lower-Hexa: %x\n %p\n", "Natalie", 'u', 100, 4294967295U, 4294967295U, 4294967295U, "Hey");
 	ft_printf("MY FUNCTION, length: %d\n", len);
 	printf("OR FUNCTION, length: %d\n", testlen);
-	ft_printf("MY FUNCTION: %p %p %p\n", 0, LONG_MAX, -1);
-	printf("OR FUNCTION: %p %p %p\n", 0, LONG_MAX, -1);
+	ft_printf("MY FUNCTION: %p %p %p %p\n", 0, LONG_MAX, -1, "Hello\n");
+	printf("OR FUNCTION: %p %p %p %p\n", 0, LONG_MAX, -1, "Hello\n");
 }
 */

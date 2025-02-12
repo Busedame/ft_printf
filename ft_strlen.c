@@ -6,12 +6,16 @@
 /*   By: nholbroo <nholbroo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:28:48 by nholbroo          #+#    #+#             */
-/*   Updated: 2023/12/04 18:41:37 by nholbroo         ###   ########.fr       */
+/*   Updated: 2025/02/12 12:49:21 by nholbroo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+/*
+	Calculates and returns the length of string s.
+	If string s is NULL, returns 0.
+*/
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;

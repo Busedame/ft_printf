@@ -6,12 +6,19 @@
 /*   By: nholbroo <nholbroo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 17:25:21 by nholbroo          #+#    #+#             */
-/*   Updated: 2023/12/05 14:30:16 by nholbroo         ###   ########.fr       */
+/*   Updated: 2025/02/12 13:01:56 by nholbroo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+/*
+	Helper function for ft_putnbr().
+	Converts and prints an integer to the standard output.
+	Does not take integer overflow/underflow into consideration, so the number
+	should always be within int range.
+	Returns the amount of digits printed.
+*/
 static int	ft_nbwrite(char *str, int n)
 {
 	int	i;
@@ -34,6 +41,12 @@ static int	ft_nbwrite(char *str, int n)
 	return (count);
 }
 
+/*
+	Converts and prints an integer to the standard output.
+	Does not take integer overflow/underflow into consideration, so the number
+	should always be within int range.
+	Returns the amount of digits printed.
+*/
 int	ft_putnbr(int n)
 {
 	char	str[12];

@@ -6,7 +6,7 @@
 /*   By: nholbroo <nholbroo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 16:53:26 by nholbroo          #+#    #+#             */
-/*   Updated: 2025/02/11 13:28:23 by nholbroo         ###   ########.fr       */
+/*   Updated: 2025/02/12 13:04:41 by nholbroo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,5 @@ int		ft_putstr(char *s);
 size_t	ft_strlen(const char *s);
 
 int		ft_putpercent(void);
-
-int		ft_atoi(const char **nptr);
 
 #endif
