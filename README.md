@@ -37,7 +37,6 @@ It returns `-1` upon error.
 #### Understanding `va_start()` in `ft_printf()`
 The `const char *` is a string that can contain both text and type identifiers, like "%s", "%p", etc.  
 By using the function `va_start()`, the **type identifiers** in `const char *` gets connected to the **data** `...`, which is stored in a `va_list`.  
-For example: 
 ```bash
 ft_printf("%i", 42);
 ```
@@ -47,7 +46,6 @@ ft_printf("%i", 42);
 #### Understanding `va_arg()` in `ft_printf()`
 The function `va_arg()` is used to iterate through the type identifiers and their respective data.  
 In `ft_printf()` -> whenever a type identifier is found in `const char *`, it gets connected to the next argument in `...`  
-For example:
 ```bash
 ft_printf("Hello, world! My name is %s, and I am %i years old.\n", "Bob", 40);
 ```
