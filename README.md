@@ -23,7 +23,7 @@ int ft_printf(const char *, ...);
 The return value for `ft_printf()` is an `int`, indicating **how many characters were printed**.  
 It returns `-1` upon error.  
 
-`ft_printf()` writes to the standard output, and is limited to handling the following conversions:
+#### `ft_printf()` writes to the standard output, and is limited to handling the following conversions:
 - `%c` Prints a single character.
 - `%s` Prints a string (as defined by the common C convention).
 - `%p` The void * pointer argument has to be printed in hexadecimal format.
