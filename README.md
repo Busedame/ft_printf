@@ -41,7 +41,7 @@ By using the function `va_start()`, the **type identifiers** in `const char *` g
 ft_printf("%i", 42);
 ```
 In this example: 
-- `const char *` is `%i`
+- `const char *` is `"%i"`
 - `...` is `42`.
 - What will be printed on the standard output: `42`.  
 
