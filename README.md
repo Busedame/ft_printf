@@ -40,7 +40,9 @@ By using the function `va_start()`, the **type identifiers** in `const char *` g
 ```bash
 ft_printf("%i", 42);
 ```
-- In this example, `const char *` is `%i` and `...` is `42`.
+In this example: 
+- `const char *` is `%i`
+- `...` is `42`.
 - What will be printed on the standard output: `42`.  
 
 #### Understanding `va_arg()` in `ft_printf()`
@@ -49,8 +51,10 @@ In `ft_printf()` -> whenever a type identifier is found in `const char *`, it ge
 ```bash
 ft_printf("Hello, world! My name is %s, and I am %i years old.\n", "Bob", 40);
 ```
-- In this example, `const char *` is `"Hello, world! My name is %s, and I am %i years old.\n"`, and `...` is `"Bob"` and `40`.
-- This essentially means that `%s` expands to `"Bob"`, and `%i` expands to `40`. 
+In this example: 
+- `const char *` is `"Hello, world! My name is %s, and I am %i years old.\n"`.
+- `...` is `"Bob"` and `40`.
+- `%s` expands to `"Bob"`, and `%i` expands to `40`. 
 - What will be printed on the standard output: `"Hello, world! My name is Bob, and I am 40 years old."`.  
 
 #### Understanding `va_end()` in `ft_printf()`
