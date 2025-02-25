@@ -59,7 +59,9 @@ In this example:
 
 #### Understanding `va_end()` in `ft_printf()`
 When `const char *` has reached the `'\0'`, meaning it has reached its end, `va_end()` is called to clean up the `va_list`.  
+
 ---
+
 ## 🧰 **Included Files**  
 - The `ft_printf.c` file containing the `ft_printf()` function, and the remaining `*.c` files containing all the printing functions for the different types.
 - A `Makefile`.
