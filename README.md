@@ -60,14 +60,10 @@ In this example:
 #### Understanding `va_end()` in `ft_printf()`
 When `const char *` has reached the `'\0'`, meaning it has reached its end, `va_end()` is called to clean up the `va_list`.  
 
----
-
 ## 🧰 **Included Files**  
 - The `ft_printf.c` file containing the `ft_printf()` function, and the remaining `*.c` files containing all the printing functions for the different types.
 - A `Makefile`.
 - A header file.
-
----
 
 ## 🧑‍💻 **Cloning the Repository**
 
@@ -76,7 +72,6 @@ This command will clone the repo, and move you to the right directory:
 ```bash
 git clone https://github.com/busedame/ft_printf/ ft_printf && cd ft_printf
 ```
----
 
 ## 🖥️ **How to Compile and Run**  
 
@@ -96,8 +91,6 @@ git clone https://github.com/busedame/ft_printf/ ft_printf && cd ft_printf
 	```bash
 	./ft_printf
  	```
-
- ---
 
 ## 🔗**Including ft_printf in your project**
 
@@ -195,4 +188,5 @@ re: fclean all
 
 .PHONY: all clean fclean re
 ```
+---
 *This project was finished Dec 8th 2023.*
